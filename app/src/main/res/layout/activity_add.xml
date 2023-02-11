@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.WordNotes.MainActivity"
+    android:background="@mipmap/bz" >
+
+    <EditText
+        android:id="@+id/listgroup1_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:textColor="@color/huise"
+        android:hint="请输入分组名(可选)"
+        android:background="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:stretchColumns="0" >
+        <TableRow>
+            <EditText
+                android:id="@+id/title1_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:hint="请输入单词"
+                android:textSize="30dp" />
+            <CheckBox
+                android:id="@+id/star1_id"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_column="2"
+                android:textSize="20dp"
+                android:textColor="@color/huise"
+                android:text="收藏"/>
+
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:text="释义:"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical" />
+            <EditText
+                android:id="@+id/content1_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/huise"
+                android:background="@color/white"
+                android:hint="请输入单词释义(可选)"
+                android:textSize="15dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:text="单词短语:"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical" />
+        <EditText
+            android:id="@+id/wordgroup1_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/huise"
+            android:background="@color/white"
+            android:hint="请输入单词短语(可选)"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:text="笔记:"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical" />
+        <EditText
+            android:id="@+id/note1_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/huise"
+            android:background="@color/white"
+            android:hint="请输入对此单词的笔记(可选)"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <Button
+        android:id="@+id/addbtn_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="0.1"
+        android:text="保存"/>
+
+</LinearLayout>

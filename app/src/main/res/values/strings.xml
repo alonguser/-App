@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">单词笔记</string>
+    <string name="app_login">欢迎登录！</string>
+    <string name="remove_user">退出登录</string>
+</resources>

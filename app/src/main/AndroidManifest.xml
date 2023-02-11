@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.WordNotes">
+
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        tools:ignore="ManifestOrder" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/tubiao"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/tubiao"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ycllogin">
+        <activity
+            android:name="com.example.WordNotes.AddActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.WordNotes.LoadActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.WordNotes.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.WordNotes.ShowActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.WordNotes.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.example.WordNotes.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.WordNotes.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.WordNotes.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
